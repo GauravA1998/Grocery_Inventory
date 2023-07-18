@@ -11,12 +11,17 @@
             <th>Name</th>
             <th>Quantity</th>
             <th>Price</th>
+             <th>Discount</th>
+            <th>Total Amount</th>
         </tr>
         {% for product in products %}
         <tr>
             <td>{{ product.name }}</td>
             <td>{{ product.quantity }}</td>
             <td>{{ product.price }}</td>
+             <td>{{ product.discount }}</td>
+            <td>{{ product.total_amount }}</td>
+
         </tr>
         {% endfor %}
     </table>
